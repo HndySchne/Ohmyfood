@@ -1,0 +1,9 @@
+@import "utils/_variables.scss";
+@import "utils/_mixin.scss";
+@import "components/_buttons.scss";
+
+// test de génération sass
+.test{
+    background-color: $body-background;
+}
+

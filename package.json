@@ -1,0 +1,19 @@
+{
+  "name": "schneider_andy_1_code_12222",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HndySchne/schneider_andy_1_code_12222.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HndySchne/schneider_andy_1_code_12222/issues"
+  },
+  "homepage": "https://github.com/HndySchne/schneider_andy_1_code_12222#readme"
+}

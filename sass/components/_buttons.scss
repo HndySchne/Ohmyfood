@@ -1,0 +1,10 @@
+
+.body-menu__btn
+{
+    @include btn(white, $primary-color); 
+}
+
+.proj-prev__btn
+{
+    @include btn(white, $primary-color); 
+}
