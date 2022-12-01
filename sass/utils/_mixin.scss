@@ -4,6 +4,11 @@
 @mixin btn($colortypo : white, $backround : $primary-color) {
     background-color: $backround;
     color: $colortypo;
-    width: 100%;
-    height: 50%;
+    width: 30%;
+}
+
+// changer la taille des images en fonction des pages  
+@mixin image ($width-img : 50%, $height-img :50% ){
+    width: $width-img;
+    height: $height-img;   
 }
