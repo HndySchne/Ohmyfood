@@ -1,10 +1,11 @@
+// ===============================
+// IMPORT
+// ===============================
 @import "utils/_variables.scss";
 @import "utils/_mixin.scss";
 @import "components/_buttons.scss";
-@import "pages/cards.scss";
-
-// test de génération sass
-.test{
-    background-color: $body-background;
-}
-
+@import "pages/cards_menu.scss";
+@import "pages/cards_acceuil.scss";
+@import "pages/blocs_acc.scss"; 
+@import "pages/bloc_menu.scss"; 
+@import "base/font.scss";

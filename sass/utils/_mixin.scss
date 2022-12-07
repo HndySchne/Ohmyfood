@@ -4,11 +4,32 @@
 @mixin btn($colortypo : white, $backround : $primary-color) {
     background-color: $backround;
     color: $colortypo;
-    width: 30%;
+    height: 40px;
+    width: 33%;
+    border-radius: 20px;
+    @include shadows-projet(); 
+    transition: 0.3s;
 }
 
 // changer la taille des images en fonction des pages  
-@mixin image ($width-img : 50%, $height-img :50% ){
-    width: $width-img;
-    height: $height-img;   
+@mixin image ($width-var : 50%, $height-var :50% ){
+    width: $width-var;
+    height: $height-var;   
+    object-fit: cover;
+    border-radius : 15px 15px 0px 0px;
+}
+
+// cardes qui sont utilisées partout sur l'application 
+@mixin Cards_selection ($width-var : 50%, $height-var :50% ) {
+    width: $width-var;
+    height: $height-var;   
+    @include shadows-projet(); 
+    transition: 0.3s;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+// Ombres des cards et boutons 
+@mixin shadows-projet {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }

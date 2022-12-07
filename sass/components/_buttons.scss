@@ -1,10 +1,7 @@
-
-.body-menu__btn
-{
-    @include btn(white, $primary-color); 
-}
-
-.proj-prev__btn
+// ==============================
+// BOUTONS DE TOUTES LES PAGES 
+// ==============================
+.body-menu__btn, .proj-body__btn, .proj-prev__btn
 {
     @include btn(white, $primary-color); 
 }

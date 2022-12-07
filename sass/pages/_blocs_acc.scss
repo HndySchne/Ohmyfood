@@ -1,0 +1,109 @@
+// ========================================
+// BODY
+// ========================================
+body
+{
+    padding-left: 0px;
+    margin: 0px;
+}
+
+// ========================================
+// HEADER 
+// ========================================
+.header_heading 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    @include shadows-projet(); 
+}
+
+.header-location
+{
+    display : flex; 
+    // margin-top: 2px;
+    // background-color: $Header-background;
+    justify-content: center;
+    height: 40px;
+
+    .header-location__logo
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-right: 15px;
+    }
+    .header-location__description
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+// Preview du projet =  informations générales + bouton 
+.proj-prev
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $body-background;
+    font-display: auto;
+}
+
+.proj-prev__heading
+{
+    h2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+// ========================================
+// RECAPITULATIF / FONCTIONNEMENT 
+// ========================================
+// résumé du projet 
+.proj-summary
+{
+    padding: 10px 0px 10px 0px;
+    height: 100%;
+}
+
+.proj-summary__step
+{
+    height: 100%;
+} 
+
+// ========================================
+// ACCEUIL - RESTAURANT 
+// ========================================
+.proj-body
+{
+    background-color: $body-background;
+    padding: 20px 0px 20px 20px;
+}
+
+// =====================================
+// FOOTER 
+// =====================================
+footer
+{
+    background-color: $footer-background;
+    padding: 5px 0px 15px 15px;
+}
+
+.content-description{
+    display: flex;
+    padding-bottom: 5px;
+    .content-description__logo
+    {
+        padding-right: 10px;
+        width: 2%;
+    }
+}
