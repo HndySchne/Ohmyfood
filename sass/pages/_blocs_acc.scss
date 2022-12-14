@@ -1,3 +1,24 @@
+// Bloc Pour faire apparaitre la page après le loading  
+.after_loading
+{
+    position : absolute; 
+    top: 0; 
+    overflow: hidden;
+    width: 100%;
+    z-index: 100;
+    animation: apparition-body 0ms 3s both;
+}
+
+@keyframes apparition-body {
+    0% {
+        transform: translatex(-9999999px);
+    }
+
+    100% {
+        transform: translatex(0px);
+    }
+}
+
 // ========================================
 // BODY
 // ========================================
@@ -18,13 +39,15 @@ body
     align-items: center;
     padding-bottom: 20px;
     @include shadows-projet(); 
+    position: relative;
+    z-index: 300;
 }
 
 .header-location
 {
+    z-index: 2;
     display : flex; 
-    // margin-top: 2px;
-    // background-color: $Header-background;
+    background-color: $Header-background;
     justify-content: center;
     height: 40px;
 

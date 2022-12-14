@@ -2,13 +2,14 @@
 
 // mixin pour mettreen place les boutons d'ohmyfood
 @mixin btn($colortypo : white, $backround : $primary-color) {
-    background-color: $backround;
     color: $colortypo;
     height: 40px;
     width: 33%;
     border-radius: 20px;
-    @include shadows-projet(); 
+    border: none; 
+    @include shadows-projet__btn(); 
     transition: 0.3s;
+    background: linear-gradiant($primary-color, $secondary-color);
 }
 
 // changer la taille des images en fonction des pages  
@@ -29,7 +30,26 @@
     margin-bottom: 10px;
 }
 
-// Ombres des cards et boutons 
-@mixin shadows-projet {
+// Ombres des éléments du projet  
+@mixin shadows-projet{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+// Ombres des boutons 
+@mixin shadows-projet__btn {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    &:hover{
+        box-shadow: 0 14px 18px 0 rgba(0,0,0,0.2);
+        animation: transition-shadow 3s both;
+    }
+}
+
+@keyframes transition-shadow {
+    0%{
+        opacity: 0.1;
+    }
+    100%{
+        opacity: 1; 
+    }
+
 }

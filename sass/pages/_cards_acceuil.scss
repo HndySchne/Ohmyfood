@@ -1,78 +1,112 @@
 // =========================== 
 // CARDS TOUTES PAGES 
 // =========================== 
-.body-card
-{
+.body-card {
     background-color: white;
     border-radius: 15px;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
 }
 
 
 // Cardes pour l'acceuil 
-.proj-summary__btn
-{
-    @include Cards_selection(90%, 75px); 
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    margin: 15px 0px 15px 15px; 
-    span{
+.proj-summary__btn {
+    @include Cards_selection(90%, 75px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0px 15px 15px;
+
+    span {
         padding-right: 15px;
     }
 
-    &:hover
-    {
+    &:hover {
         background-color: $primary-color;
         opacity: 0.3;
     }
 }
 
-
 // =========================== 
 // CARDS IMAGES ACCEUIL
 // Le contenu de la card text 
-.card-description
-{
-    display: flex; 
+.card-description {
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 0px;
-    .card-description__logo
-    {
-        height: 100%;
-        padding-right: 25px;
+
+    .card-description__logo {
+        display: flex;
+        justify-content: center;
+        height: 50px;
+        width: 100px;
+
+        span i {
+            padding: 10px;
+            position: absolute;
+            font-size: 22px;
+        }
+        .fa-solid
+        {
+            opacity: 0;
+        }
+
+        :hover .fa-solid{
+            animation: heart 500ms both;
+            transform-origin: bottom;
+            display: block;
+            background-image: linear-gradient($primary-color, $secondary-color);
+        }
     }
 }
 
-.card-description__header
-{
-    padding-left: 15px;
-    h3
-    {
-        margin: 0px;
-        font-weight: bolder;
-        ~p 
-        {
-            margin-top: 0px;
-        }
-    }    
+// Transition des coeurs 
+@keyframes heart {
+    0% {
+        transform: scaleY(0.6);
+        opacity: 0.1;
+    }
+
+    46% {
+
+        transform: scaleY(0.7);
+        opacity : 0.2; 
+    }
+
+    80%{
+        opacity : 0.3; 
+    }
+
+    100% {
+
+        transform: scaleY(1);
+        opacity: 1;
+    }
 }
 
-.proj-body__cards
-{
+.card-description__header {
+    padding-left: 15px;
+
+    h3 {
+        margin: 0px;
+        font-weight: bolder;
+
+        ~p {
+            margin-top: 0px;
+        }
+    }
+}
+
+.proj-body__cards {
     width: 90%;
-    height: 90%; 
-    display: flex; 
-    flex-direction: column; 
-    justify-content: center; 
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 // Image et card de la page d'acceuil 
-.body-card
-{
-    img
-    {
+.body-card {
+    img {
         @include image(100%, 250px);
     }
 }

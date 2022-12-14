@@ -1,0 +1,52 @@
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 500px;
+    animation : disparition-body 0s 3s both;
+}
+
+.load {
+     &__bar {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-image: linear-gradient($primary-color, $secondary-color);
+        animation: roller-bars 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+        transform-origin: 0px 100px;
+
+        @for $i from 1 through 10 {
+            &--#{$i} {
+                animation-delay: 100ms * $i;
+            }
+        }
+    }
+}
+
+// rotation et couleur 
+@keyframes roller-bars {
+    0% {
+        transform: rotate(0deg);
+        opacity: 0.1;
+
+    }
+
+    100% {
+        transform: rotate(360deg);
+        opacity: 1;
+    }
+}
+
+// dispraition du loader
+@keyframes disparition-body {
+    0% {
+        transform: translatex(0px);
+    }
+
+    100% {
+        transform: translatex(-9999999px);
+    }
+
+}

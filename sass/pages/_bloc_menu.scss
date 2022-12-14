@@ -1,21 +1,57 @@
-.header_img
-{
-    img{
-        @include image(100%, 250px); 
+// ====================================
+// HEADER
+// ====================================
+.header_img {
+    img {
+        @include image(100%, 250px);
     }
 }
 
-.proj-body__heading
-{
-    display: flex; 
+.proj-body__heading {
+    display: flex;
     justify-content: space-between;
 
-    .proj-body__logo{
-        display :flex; 
+    .proj-body__logo {
+        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         padding-right: 15px;
     }
+}
 
+// ====================================
+// MENUS
+// ====================================
+.proj-button {
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.euro {
+    // border: solid;
+    // height: 25px;
+
+    &:hover {
+        animation: menus-hover 1000ms infinite both;
+        // transform-origin: right;
+    }
+}
+
+
+@keyframes menus-hover {
+    0% {
+        transform: translateX(0px);
+    }
+
+    50% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(-400%);
+    }
 }

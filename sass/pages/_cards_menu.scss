@@ -1,13 +1,27 @@
+@keyframes menus {
+    0%{
+        opacity : 0;
+    }
+
+    50%{
+        opacity :0.4; 
+    }
+    100%{
+        opacity: 1; 
+    }
+}
+
 // Cardes pour le menu 
 .meal-cards__card
 {
     @include Cards_selection(90%, 75px); 
     padding: 10px 0px 0px 10px;
-
-    &:hover
-    {
-        background-color: $primary-color;
-        opacity: 0.3;
+    animation: menus 1000ms backwards;
+    // apparition avec un délai en fonction des occurences 
+    @for $i from 1 through 3 {
+        &--#{$i}{
+            animation-delay: $animation-delay-time * $i;
+        }
     }
 
     p{
@@ -15,6 +29,7 @@
         padding: 0px;
     }
 }
+
 
 .meal-card__description
 {
