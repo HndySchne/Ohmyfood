@@ -69,6 +69,10 @@
         .meal-card__check {
             margin-right: 0%;
         }
+
+        i {
+            animation: rotate-i 1s ease-in-out both;
+        }
     }
 }
 
@@ -91,4 +95,14 @@
         color: white;
     }
     // ----------------------------
+}
+
+@keyframes rotate-i {
+    0%{
+        transform: rotate(180deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
 }
