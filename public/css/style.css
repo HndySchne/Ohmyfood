@@ -121,6 +121,9 @@
   opacity: 0;
 }
 .card-description .card-description__logo :hover .fa-solid {
+  z-index: 100000;
+  color: transparent;
+  background-clip: text;
   animation: heart 500ms both;
   transform-origin: bottom;
   display: block;
@@ -176,7 +179,7 @@
   overflow: hidden;
   width: 100%;
   z-index: 100;
-  animation: apparition-body 0ms 3s both;
+  animation: apparition-body 0ms 0.05s both;
 }
 
 @keyframes apparition-body {
@@ -293,21 +296,55 @@ footer {
   justify-content: center;
 }
 
-.euro:hover {
-  animation: menus-hover 1000ms infinite both;
+.meal-cards__card {
+  display: flex;
+  overflow: hidden;
+  padding-top: 0px;
 }
 
-@keyframes menus-hover {
-  0% {
-    transform: translateX(0px);
-  }
-  50% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(-400%);
-  }
+.meal-card__heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
+.meal-card__heading p {
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.meal-card__description {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-bottom: 15px;
+  width: 30%;
+}
+
+.meal-cards__card:hover .meal-card__check {
+  margin-right: 0%;
+}
+
+.meal-card__check {
+  height: 100%;
+  width: 30%;
+  transform-origin: right;
+  background-color: #99E2D0;
+  margin-right: -23%;
+  transition: all 500ms ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.meal-card__check i {
+  font-size: 30px;
+  color: white;
+}
+
 @font-face {
   font-family: "Roboto";
   src: url("../../font/roboto/Roboto-Regular.ttf") format("truetype"), url("../../font/roboto/Roboto-Black.ttf") format("truetype");
@@ -316,7 +353,11 @@ footer {
   font-family: "Shrikhand";
   src: url("../../font/Shrikhand-Regular.ttf") format("truetype");
 }
-h2, p, span, .content-description {
+h2,
+h3,
+p,
+span,
+.content-description {
   font-family: "Roboto", serif;
 }
 
@@ -331,13 +372,19 @@ h1 {
   font-family: "Shrikhand", serif;
 }
 
+h3 {
+  margin: 0px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
 .loading {
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
   height: 500px;
-  animation: disparition-body 0s 3s both;
+  animation: disparition-body 0s 0.05s both;
 }
 
 .load__bar {

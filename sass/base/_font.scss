@@ -11,18 +11,28 @@
     src: url('../../font/Shrikhand-Regular.ttf') format('truetype');
 }
 
-h2, p, span, .content-description {
+h2,
+h3,
+p,
+span,
+.content-description {
     font-family: 'Roboto', serif;
 }
 
 footer {
     color: white;
+
     h2 {
         font-family: 'Shrikhand', serif;
     }
 }
 
-h1
-{
+h1 {
     font-family: 'Shrikhand', serif;
+}
+
+h3 {
+    margin: 0px;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }

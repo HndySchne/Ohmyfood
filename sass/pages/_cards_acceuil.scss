@@ -7,7 +7,6 @@
     margin-bottom: 20px;
 }
 
-
 // Cardes pour l'acceuil 
 .proj-summary__btn {
     @include Cards_selection(90%, 75px);
@@ -51,6 +50,9 @@
         }
 
         :hover .fa-solid{
+            z-index: 100000;
+            color: transparent;
+            background-clip: text;
             animation: heart 500ms both;
             transform-origin: bottom;
             display: block;

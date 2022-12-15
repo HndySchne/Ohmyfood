@@ -30,28 +30,65 @@
     justify-content: center;
 }
 
+.meal-cards__card {
+    display: flex;
+    overflow: hidden;
+    padding-top: 0px;
+}
 
-.euro {
-    // border: solid;
-    // height: 25px;
+// On ajoute des "dots" dans le cas où le bloc à côté vient empiéter sur p et h3
+// et aussi dans le cas d'un rétrécissement 
+.meal-card__heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 
-    &:hover {
-        animation: menus-hover 1000ms infinite both;
-        // transform-origin: right;
+    // On ajoute des "dots" sur dans le cas d'un rétrécissement 
+    p {
+        text-overflow: ellipsis;
+        overflow: hidden;
     }
 }
 
+.meal-card__description {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-bottom: 15px;
+    width: 30%;
+}
 
-@keyframes menus-hover {
-    0% {
-        transform: translateX(0px);
+// cas du hover : on va décaler la box vers la gauche 
+// avec un margin-right qui passse de -23 % à 0%
+.meal-cards__card {
+    &:hover {
+        .meal-card__check {
+            margin-right: 0%;
+        }
     }
+}
 
-    50% {
-        transform: translateX(-100%);
+.meal-card__check {
+    height: 100%;
+    width: 30%;
+    transform-origin: right;
+    background-color: $tertiary-background;
+    margin-right: -23%;
+    // transition du margin right avec un ease-in-out pour fluidifier l'animation 
+    transition: all 500ms ease-in-out;
+    // positionnement du logo
+    // ----------------------------
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    i {
+        font-size: 30px;
+        color: white;
     }
-
-    100% {
-        transform: translateX(-400%);
-    }
+    // ----------------------------
 }
