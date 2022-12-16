@@ -9,11 +9,13 @@
 
 // Cardes pour l'acceuil 
 .proj-summary__btn {
-    @include Cards_selection(90%, 75px);
+    @include Cards_selection(75px);
+    padding-right: $padding-cards;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 15px 0px 15px 15px;
+    margin-left: 15px;
+    margin-right: 15px;
 
     span {
         padding-right: 15px;
@@ -49,6 +51,7 @@
             opacity: 0;
         }
 
+        // coeur qui passe en violet 
         :hover .fa-solid{
             z-index: 100000;
             color: transparent;
@@ -99,8 +102,7 @@
 }
 
 .proj-body__cards {
-    width: 90%;
-    height: 90%;
+    padding-right: $padding-cards;
     display: flex;
     flex-direction: column;
     justify-content: center;

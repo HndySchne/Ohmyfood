@@ -46,7 +46,6 @@
   }
 }
 .meal-cards__card {
-  width: 90%;
   height: 75px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
@@ -82,16 +81,17 @@
 }
 
 .proj-summary__btn {
-  width: 90%;
   height: 75px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   border-radius: 10px;
   margin-bottom: 10px;
+  padding-right: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 15px 0px 15px 15px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 .proj-summary__btn span {
   padding-right: 15px;
@@ -159,8 +159,7 @@
 }
 
 .proj-body__cards {
-  width: 90%;
-  height: 90%;
+  padding-right: 15px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -179,7 +178,7 @@
   overflow: hidden;
   width: 100%;
   z-index: 100;
-  animation: apparition-body 0ms 0.05s both;
+  animation: apparition-body 0ms 3s both;
 }
 
 @keyframes apparition-body {
@@ -234,12 +233,29 @@ body {
   align-items: center;
   background-color: #f7f7f7;
   font-display: auto;
+  padding-bottom: 50px;
 }
 
-.proj-prev__heading h2 {
+.proj-prev__heading {
+  width: 200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+}
+.proj-prev__heading h2 {
+  text-align: center;
+}
+
+.proj-prev__description {
+  padding-bottom: 20px;
+}
+.proj-prev__description p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .proj-summary {
@@ -251,7 +267,7 @@ body {
   height: 100%;
 }
 
-.proj-body {
+.homePage-body {
   background-color: #f7f7f7;
   padding: 20px 0px 20px 20px;
 }
@@ -270,11 +286,22 @@ footer {
   width: 2%;
 }
 
+.header_img {
+  z-index: 2;
+}
 .header_img img {
   width: 100%;
   height: 250px;
   object-fit: cover;
   border-radius: 15px 15px 0px 0px;
+}
+
+.proj-body {
+  position: relative;
+  padding-top: 0px;
+  top: -30px;
+  z-index: 300;
+  border-radius: 30px 30px 0px 0px;
 }
 
 .proj-body__heading {
@@ -286,7 +313,11 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-right: 15px;
+  padding-right: 10%;
+}
+.proj-body__heading .proj-body__logo i {
+  font-size: 25px;
+  font-weight: 1px;
 }
 
 .proj-button {
@@ -328,7 +359,7 @@ footer {
   margin-right: 0%;
 }
 .meal-cards__card:hover i {
-  animation: rotate-i 1s ease-in-out both;
+  animation: rotate-i 1s ease-in-out;
 }
 
 .meal-card__check {
@@ -377,10 +408,16 @@ footer {
 }
 footer h2 {
   font-family: "Shrikhand", serif;
+  border: none;
 }
 
 h1 {
   font-family: "Shrikhand", serif;
+}
+
+.proj-body h2 {
+  border-bottom: solid 3px #99E2D0;
+  width: 60px;
 }
 
 h3 {
@@ -395,7 +432,7 @@ h3 {
   align-items: center;
   position: relative;
   height: 500px;
-  animation: disparition-body 0s 0.05s both;
+  animation: disparition-body 0s 3s both;
 }
 
 .load__bar {

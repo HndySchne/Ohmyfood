@@ -21,8 +21,7 @@
 }
 
 // cardes qui sont utilisées partout sur l'application 
-@mixin Cards_selection ($width-var : 50%, $height-var :50% ) {
-    width: $width-var;
+@mixin Cards_selection ($height-var :50%) {
     height: $height-var;   
     @include shadows-projet(); 
     transition: 0.3s;

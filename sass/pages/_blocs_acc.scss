@@ -6,7 +6,7 @@
     overflow: hidden;
     width: 100%;
     z-index: 100;
-    animation: apparition-body 0ms 0.05s both;
+    animation: apparition-body 0ms 3s both;
 }
 
 @keyframes apparition-body {
@@ -77,15 +77,32 @@ body
     align-items: center;
     background-color: $body-background;
     font-display: auto;
+    padding-bottom: 50px;
 }
 
 .proj-prev__heading
 {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
     h2{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        text-align: center;
     }
+}
+
+.proj-prev__description
+{
+    p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    padding-bottom: 20px;
 }
 
 // ========================================
@@ -106,7 +123,7 @@ body
 // ========================================
 // ACCEUIL - RESTAURANT 
 // ========================================
-.proj-body
+.homePage-body
 {
     background-color: $body-background;
     padding: 20px 0px 20px 20px;

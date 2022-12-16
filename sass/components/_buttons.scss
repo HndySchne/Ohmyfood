@@ -11,6 +11,7 @@
     }
 }
 
+// Transparance des boutons sur toutes les pages lors du survol 
 @keyframes transition-buttons {
     0%{
         opacity: 1;
@@ -18,5 +19,4 @@
     100%{
         opacity: 0.8; 
     }
-
 }
