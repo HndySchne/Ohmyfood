@@ -1,0 +1,85 @@
+// =======================================
+// ACCEUIL 
+// =======================================
+// Transition des coeurs qui apparaissent 
+@keyframes heart {
+    0% {
+        transform: scaleY(0.6);
+        opacity: 0.1;
+    }
+
+    46% {
+
+        transform: scaleY(0.7);
+        opacity : 0.2; 
+    }
+
+    80%{
+        opacity : 0.3; 
+    }
+
+    100% {
+
+        transform: scaleY(1);
+        opacity: 1;
+    }
+}
+
+// Transition des coeurs qui disparaissent
+@keyframes heart-disappear {
+    0% {
+        opacity: 1;
+    }
+
+    46% {
+        opacity: 0.8; 
+    }
+
+    80%{
+        opacity : 0.6; 
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+// APPARITION DE LA PAGE ACCEUIL après le loader !!!
+@keyframes apparition-body {
+    0% {
+        transform: translatex(-9999999px);
+    }
+
+    100% {
+        transform: translatex(0px);
+    }
+}
+
+// =======================================
+// MENUS
+// =======================================
+// apparistion des cards menu
+@keyframes menus {
+    0%{
+        opacity : 0;
+    }
+
+    50%{
+        opacity :0.4; 
+    }
+    100%{
+        opacity: 1; 
+    }
+}
+
+// rotation du logo 
+@keyframes rotate-i {
+    0% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
