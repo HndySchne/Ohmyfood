@@ -1,5 +1,5 @@
 // Bloc Pour faire apparaitre la page après le loading  
-.after_loading
+.after-loading
 {
     position : absolute; 
     top: 0; 
@@ -7,16 +7,6 @@
     width: 100%;
     z-index: 100;
     animation: apparition-body 0ms 3s both;
-}
-
-@keyframes apparition-body {
-    0% {
-        transform: translatex(-9999999px);
-    }
-
-    100% {
-        transform: translatex(0px);
-    }
 }
 
 // ========================================
@@ -31,16 +21,20 @@ body
 // ========================================
 // HEADER 
 // ========================================
-.header_heading 
+.header-heading 
 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding-bottom: 20px;
-    @include shadows-projet(); 
     position: relative;
     z-index: 300;
+}
+
+.header-shadow
+{
+    @include shadows-projet(); 
 }
 
 .header-location
