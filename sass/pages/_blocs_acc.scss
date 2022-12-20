@@ -1,8 +1,7 @@
 // Bloc Pour faire apparaitre la page après le loading  
-.after-loading
-{
-    position : absolute; 
-    top: 0; 
+.after-loading {
+    position: absolute;
+    top: 0;
     overflow: hidden;
     width: 100%;
     z-index: 100;
@@ -12,8 +11,7 @@
 // ========================================
 // BODY
 // ========================================
-body
-{
+body {
     padding-left: 0px;
     margin: 0px;
 }
@@ -21,8 +19,7 @@ body
 // ========================================
 // HEADER 
 // ========================================
-.header-heading 
-{
+.header-heading {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -32,29 +29,26 @@ body
     z-index: 300;
 }
 
-.header-shadow
-{
-    @include shadows-projet(); 
+.header-shadow {
+    @include shadows-projet();
 }
 
-.header-location
-{
+.header-location {
     z-index: 2;
-    display : flex; 
+    display: flex;
     background-color: $Header-background;
     justify-content: center;
     height: 40px;
 
-    .header-location__logo
-    {
+    .header-location__logo {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         padding-right: 15px;
     }
-    .header-location__description
-    {
+
+    .header-location__description {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -62,9 +56,10 @@ body
     }
 }
 
-// Preview du projet =  informations générales + bouton 
-.proj-prev
-{
+// =======================================================
+// Preview du projet =  informations générales + bouton explorer nos restaurants
+// =======================================================
+.proj-prev {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -74,28 +69,27 @@ body
     padding-bottom: 50px;
 }
 
-.proj-prev__heading
-{
+.proj-prev__heading {
     width: 200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    h2{
+    h2 {
         text-align: center;
     }
 }
 
-.proj-prev__description
-{
-    p{
+.proj-prev__description {
+    p {
         display: flex;
         justify-content: center;
         align-items: center;
         margin-top: 0px;
         margin-bottom: 0px;
     }
+
     padding-bottom: 20px;
 }
 
@@ -103,22 +97,47 @@ body
 // RECAPITULATIF / FONCTIONNEMENT 
 // ========================================
 // résumé du projet 
-.proj-summary
-{
-    padding: 10px 0px 10px 0px;
+.proj-summary {
+    padding: 15px;
     height: 100%;
 }
 
-.proj-summary__step
-{
+.proj-summary__step {
     height: 100%;
-} 
+}
+
+// les cercles (1, 2, 3) du fonctionnement du projet 
+.circle {
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    left: 17px;
+    background-color: $primary-color;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// bouton du résumé / fonctionnement du projet 
+.proj-summary__btn {
+    display: flex;
+    justify-content: flex-start;
+
+    span {
+        margin-left: 5px;
+    }
+
+    span i {
+        margin-left: 25px;
+    }
+}
 
 // ========================================
 // ACCEUIL - RESTAURANT 
 // ========================================
-.homePage-body
-{
+.homePage-body {
     background-color: $body-background;
     padding: 20px 0px 20px 20px;
 }
@@ -126,18 +145,24 @@ body
 // =====================================
 // FOOTER 
 // =====================================
-footer
-{
+footer {
     background-color: $footer-background;
     padding: 5px 0px 15px 15px;
 }
 
-.content-description{
+.content-description {
     display: flex;
     padding-bottom: 5px;
-    .content-description__logo
-    {
-        padding-right: 10px;
+
+    // lien vers le mail d'ohmyfood 
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    // les différents logos du footer 
+    .content-description__logo {
+        padding-right: 20px;
         width: 2%;
     }
 }

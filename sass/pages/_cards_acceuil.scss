@@ -21,12 +21,14 @@
         padding-right: 15px;
     }
 
+    // le background-color et le logo passent en violet 
     &:hover {
-        background-color: $primary-color;
-        opacity: 0.3;
+        background-color: rgba($primary-color, 0.1);
+        i{
+            color: $primary-color;
+        }
     }
 }
-
 
 // =========================== 
 // IMAGES 
@@ -52,7 +54,6 @@
         }
     }
 }
-
 
 // Le contenu de la card text 
 .card-description {

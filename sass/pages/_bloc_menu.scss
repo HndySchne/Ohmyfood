@@ -3,7 +3,6 @@
 // ====================================
 .header-img {
     z-index: 2;
-
     img {
         @include image(100%, 250px);
     }
