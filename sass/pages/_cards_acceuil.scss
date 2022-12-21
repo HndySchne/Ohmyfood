@@ -24,7 +24,8 @@
     // le background-color et le logo passent en violet 
     &:hover {
         background-color: rgba($primary-color, 0.1);
-        i{
+
+        i {
             color: $primary-color;
         }
     }
@@ -60,46 +61,46 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
 
-    .card-description__logo {
-        display: flex;
-        justify-content: center;
-        height: 50px;
-        width: 100px;
+.card-description__logo, .proj-body__logo {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    width: 100px;
 
-        span i {
-            padding: 10px;
-            position: absolute;
-            font-size: 22px;
-        }
+    span i {
+        padding: 10px;
+        position: absolute;
+        font-size: 22px;
+    }
 
-        // coeur violet (initialement rempli)
-        .fa-solid
-        {
-            opacity: 0;
-        }
+    // coeur violet (initialement rempli)
+    .fa-solid {
+        opacity: 0;
+    }
 
-        // coeur non rempli (doit disparaitre)
-        .fa-regular{
-            opacity: 1;
-        }
+    // coeur non rempli (doit disparaitre)
+    .fa-regular {
+        opacity: 1;
+    }
 
-        // coeur qui passe en violet 
-        :hover .fa-solid{
-            z-index: 100000;
-            color: transparent;
-            background-clip: text;
-            animation: heart 750ms cubic-bezier(0,.68,.88,.64) both;
-            transform-origin: bottom;
-            display: block;
-            background-image: linear-gradient($primary-color, $secondary-color);
-        }
+    // coeur qui passe en violet 
+    :hover .fa-solid {
+        z-index: 100000;
+        color: transparent;
+        background-clip: text;
+        animation: heart 750ms cubic-bezier(0, .68, .88, .64) both;
+        transform-origin: bottom;
+        display: block;
+        background-image: linear-gradient($primary-color, $secondary-color);
+    }
 
-        :hover .fa-regular{
-            animation: heart-disappear 750ms cubic-bezier(0,.68,.88,.64) both;
-        }
+    :hover .fa-regular {
+        animation: heart-disappear 750ms cubic-bezier(0, .68, .88, .64) both;
     }
 }
+
 
 // contenu des cards 
 .proj-body__cards {

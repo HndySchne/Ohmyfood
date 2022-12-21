@@ -64,6 +64,15 @@
     }
 }
 
+// logo coeur qui se rempli (positionnement du span) 
+.proj-body__logo{
+    span{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+}
+
 // ====================================
 // MENUS - CARDS 
 // ====================================
