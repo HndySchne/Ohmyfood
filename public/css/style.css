@@ -587,5 +587,55 @@ h3 {
     transform: rotate(360deg);
   }
 }
+@media (min-width: 992px) {
+  .proj-summary {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .proj-summary__btn {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+  .proj-summary__btn .circle {
+    position: relative;
+    left: 10px;
+  }
+  .body-card {
+    margin: 20px;
+    width: 400px;
+  }
+  .menus {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px;
+  }
+  .proj-summary__step {
+    height: 100%;
+    display: flex;
+  }
+  .proj-body__cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 25px;
+  }
+  footer .footer__description {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+  }
+  footer h2 {
+    font-size: 50px;
+    margin: 0px;
+  }
+  .content-description .content-description__logo {
+    padding-right: 20px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

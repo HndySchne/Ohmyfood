@@ -1,0 +1,74 @@
+// media queries pour la partie web, on est sur la méthode "mobile first"
+@media (min-width: 992px) {
+
+    .proj-summary {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .proj-summary__btn {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 25px;
+
+        .circle {
+            position: relative;
+            left: 10px;
+        }
+    }
+
+    .body-card {
+        margin: 20px;
+        width: 400px;
+    }
+
+    // display flex les menus 
+    .menus{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 15px;
+    }
+
+    .proj-summary__step {
+        height: 100%;
+        display: flex;
+    }
+
+    // .body-menu{
+    //     margin-left: 30px;
+    // }
+
+    // Changement de direction en ligne 
+    .proj-body__cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 25px;
+    }
+
+    // On centre le footer 
+    footer {
+        .footer__description {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px;
+        }
+
+        // changement de font size et de margin pour le titre 
+        h2 {
+            font-size: 50px;
+            margin: 0px;
+        }
+
+    }
+
+    .content-description {
+        .content-description__logo {
+            padding-right: 20px;
+        }
+    }
+}
