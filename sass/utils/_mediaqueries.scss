@@ -22,7 +22,7 @@
 
     .body-card {
         margin: 20px;
-        width: 400px;
+        width: 330px;
     }
 
     // display flex les menus 
@@ -30,7 +30,6 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin: 15px;
     }
 
     .proj-summary__step {
@@ -38,16 +37,12 @@
         display: flex;
     }
 
-    // .body-menu{
-    //     margin-left: 30px;
-    // }
-
     // Changement de direction en ligne 
     .proj-body__cards {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        margin: 25px;
+        flex-wrap: wrap;
     }
 
     // On centre le footer 

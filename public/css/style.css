@@ -606,13 +606,12 @@ h3 {
   }
   .body-card {
     margin: 20px;
-    width: 400px;
+    width: 330px;
   }
   .menus {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 15px;
   }
   .proj-summary__step {
     height: 100%;
@@ -622,7 +621,7 @@ h3 {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin: 25px;
+    flex-wrap: wrap;
   }
   footer .footer__description {
     display: flex;
