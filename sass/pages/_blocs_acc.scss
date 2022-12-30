@@ -65,7 +65,6 @@ body {
     justify-content: center;
     align-items: center;
     background-color: $body-background;
-    font-display: auto;
     padding-bottom: 50px;
 }
 
@@ -124,6 +123,7 @@ body {
 .proj-summary__btn {
     display: flex;
     justify-content: flex-start;
+    background-color: $body-background;
 
     span {
         margin-left: 5px;
@@ -131,6 +131,7 @@ body {
 
     span i {
         margin-left: 25px;
+        color: #7E7E7E;
     }
 }
 

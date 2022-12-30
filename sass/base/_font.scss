@@ -15,7 +15,8 @@ h2,
 h3,
 p,
 span,
-.content-description {
+.content-description,
+.circle {
     font-family: 'Roboto', serif;
 }
 
@@ -35,11 +36,11 @@ h1 {
 }
 
 // titres h2 pour les pages menus 
-.proj-body{
+.proj-body {
     h2 {
         border-bottom: solid 3px $tertiary-background;
         width: 60px;
-    }    
+    }
 }
 
 // sous-titres des plats 

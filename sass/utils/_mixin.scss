@@ -9,7 +9,6 @@
     border: none; 
     @include shadows-projet__btn(); 
     transition: 0.3s;
-    background: linear-gradiant($primary-color, $secondary-color);
 }
 
 // changer la taille des images en fonction des pages  
